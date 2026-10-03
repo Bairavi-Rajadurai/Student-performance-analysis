@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Performance Analyzer</h2>
+
+    <label>Attendance (%)</label>
+    <input type="number" id="attendance" min="0" max="100">
+
+    <label>Study Hours per Day</label>
+    <input type="number" id="studyHours" min="0" step="0.5">
+
+    <label>Internal Marks</label>
+    <input type="number" id="marks" min="0" max="100">
+
+    <button onclick="analyze()">Analyze Student</button>
+    <button onclick="resetForm()">Reset</button>
+
+    <h3 id="result"></h3>
+
+    <div class="progress">
+        <div id="progressBar"></div>
+    </div>
+
+    <hr>
+
+    <h4>⚖️ Effort vs Result</h4>
+    <p id="effortResult"></p>
+
+    <h4>📱 Distraction Risk</h4>
+    <p id="distraction"></p>
+
+    <h4>⏱️ Exam Readiness</h4>
+    <p id="readiness"></p>
+
+    <h4>🔥 Confidence Score</h4>
+    <p id="confidence"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
